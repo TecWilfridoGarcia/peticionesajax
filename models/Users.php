@@ -5,7 +5,7 @@
  {  
       $name = mysqli_real_escape_string($connect, $_POST["name"]);  
       $message = mysqli_real_escape_string($connect, $_POST["message"]);  
-      $sql = "INSERT INTO tbl_form(name, message) VALUES ('".$name."', '".$message."')";  
+      $sql = "INSERT INTO tbl_form (name, message) VALUES ('".$name."', '".$message."')";  
       if(mysqli_query($connect, $sql))  
       {  
            echo "Mensaje guardado";  
